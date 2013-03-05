@@ -22,7 +22,6 @@ import com.tsystems.javaschool.clientappl.controller.listeners.SearchButtonListe
 public class NewOrderView extends JPanel {
 
 	private static final long serialVersionUID = 1433342346122196759L;
-
 	private final Font newOrderViewFont;
 	private final JButton searchButton;
 	private final JLabel fromLabel;

@@ -11,7 +11,7 @@ import com.tsystems.javaschool.common.ServiceResponse;
  * @author Alexander Markov
  */
 public class TimetableService {
-	private final static Logger logger = Logger
+	private static final Logger logger = Logger
 			.getLogger(TimetableService.class);
 
 	// TODO: separate implementation and SQL queries (use DAO for JDBC)

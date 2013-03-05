@@ -1,5 +1,6 @@
 package com.tsystems.javaschool.common;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -7,8 +8,9 @@ import java.util.List;
  * 
  * @author Alexander Markov
  */
-public class ServiceResponse {
+public class ServiceResponse implements Serializable {
 
+	private static final long serialVersionUID = 3951026179555114707L;
 	private final Boolean status;
 	private final List<?> payload;
 	private final String exception;

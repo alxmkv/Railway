@@ -9,9 +9,9 @@ import org.apache.log4j.Logger;
  */
 public class ShutdownSequence extends Thread {
 
-	private final static Logger logger = Logger
+	private static final Logger logger = Logger
 			.getLogger(ShutdownSequence.class);
-	private final static String className = ShutdownSequence.class
+	private static final String className = ShutdownSequence.class
 			.getSimpleName();
 
 	private final Host host;

@@ -8,7 +8,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 @Generated(value = "Dali", date = "2013-03-02T22:31:45.665+0400")
 @StaticMetamodel(Station.class)
 public class Station_ {
-	public static volatile SingularAttribute<Station, String> id;
+	public static volatile SingularAttribute<Station, Long> id;
 	public static volatile SingularAttribute<Station, String> name;
 	public static volatile SetAttribute<Station, Timetable> timetables;
 }

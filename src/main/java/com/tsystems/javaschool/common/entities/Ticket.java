@@ -17,7 +17,7 @@ public class Ticket implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.TABLE)
 	@Column(unique = true, nullable = false)
-	private String id;
+	private Long id;
 
 	@Temporal(TemporalType.DATE)
 	@Column(nullable = false)
@@ -42,11 +42,11 @@ public class Ticket implements Serializable {
 		this.date = date;
 	}
 
-	public String getId() {
+	public Long getId() {
 		return this.id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

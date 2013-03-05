@@ -24,6 +24,7 @@ public class ExitMenuItemListener implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == menu.getFileExitMenu()) {
+			System.out.println("Client disconnected");
 			System.exit(0);
 		}
 	}

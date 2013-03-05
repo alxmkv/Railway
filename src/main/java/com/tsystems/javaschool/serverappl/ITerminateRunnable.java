@@ -1,4 +1,4 @@
-package com.tsystems.javaschool.common;
+package com.tsystems.javaschool.serverappl;
 
 /**
  * Extended from <code>Runnable</code> this interface adds termination method

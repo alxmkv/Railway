@@ -1,25 +1,22 @@
 package com.tsystems.javaschool.serverappl.netutils;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.UUID;
 
 import org.apache.log4j.Logger;
 
-import com.tsystems.javaschool.clientappl.ClientSenderReceiver;
 import com.tsystems.javaschool.common.ServiceRequest;
-import com.tsystems.javaschool.common.ServiceResponse;
 import com.tsystems.javaschool.serverappl.concurrentutils.Counter;
+import com.tsystems.javaschool.serverappl.services.ServiceLocator;
 
 /**
  * @author Alexander Markov
  */
 public class SessionTask implements Runnable {
 
-	private final static Logger logger = Logger.getLogger(SessionTask.class);
-	private final static String className = SessionTask.class.getSimpleName();
+	private static final Logger logger = Logger.getLogger(SessionTask.class);
+	private static final String className = SessionTask.class.getSimpleName();
 
 	private final String id;
 	private final Counter counter;
@@ -42,25 +39,14 @@ public class SessionTask implements Runnable {
 	@Override
 	public void run() {
 		System.out.println(className + " #" + id + " started");
-//		DataOutputStream dos = null;
-//		DataInputStream dis = null;
-//		String str = "";
 		try {
-			new ServerReceiverSender(socket.getInputStream(), socket.getOutputStream());
-//			dos = new DataOutputStream(socket.getOutputStream());
-//			dis = new DataInputStream(socket.getInputStream());
+			new ServerReceiverSender(socket.getInputStream(),
+					socket.getOutputStream());
 			while (isRunning) {
-				// TODO: service(request)
-				//ServerReceiverSender.send(service(ServerReceiverSender.receive()));
-//				str = dis.readUTF();
-//				if (str != null && !("".equalsIgnoreCase(str))) {
-//					System.out.println("Received message: " + str);
-//					dos.writeUTF("Read message: " + str);
-//					dos.flush();
-//					System.out.println("Sent message: Read message: " + str);
-//				} else {
-//					break;
-//				}
+				ServiceRequest request = ServerReceiverSender.receive();
+				if (request != null) {
+					ServerReceiverSender.send(ServiceLocator.service(request));
+				}
 			}
 		} catch (IOException e) {
 			logger.warn("Session #" + id + " client disconnected");
@@ -77,21 +63,6 @@ public class SessionTask implements Runnable {
 			} catch (IOException e) {
 				logger.error("Session #" + id + " could not close socket");
 			}
-//			try {
-//				if (dis != null) {
-//					dis.close();
-//				}
-//			} catch (IOException e) {
-//				logger.error("Session #" + id + " could not close input stream");
-//			}
-//			try {
-//				if (dos != null) {
-//					dos.close();
-//				}
-//			} catch (IOException e) {
-//				logger.error("Session #" + id
-//						+ " could not close output stream");
-//			}
 			System.out.println("Session #" + id + " terminated");
 		}
 	} // run()

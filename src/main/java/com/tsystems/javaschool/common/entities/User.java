@@ -19,7 +19,7 @@ public class User implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.TABLE)
 	@Column(unique = true, nullable = false)
-	private String id;
+	private Long id;
 
 	@Temporal(TemporalType.DATE)
 	@Column(nullable = false)
@@ -37,6 +37,7 @@ public class User implements Serializable {
 	@Column(nullable = false, length = 32)
 	private String password;
 
+	@Column(name = "status")
 	private byte status;
 
 	@Column(nullable = false, length = 32)
@@ -66,14 +67,15 @@ public class User implements Serializable {
 	}
 
 	public User(String login, String password, String email, String name,
-			String surname, Date birthdate, Timestamp tsLogin) {
+			String surname, Date birthdate, byte userType, byte status) {
 		this.login = login;
 		this.password = password;
 		this.email = email;
 		this.name = name;
 		this.surname = surname;
 		this.birthdate = birthdate;
-		this.tsLogin = tsLogin;
+		this.userType = userType;
+		this.status = status;
 	}
 
 	public User(String login, String password, String email, String name,
@@ -91,11 +93,11 @@ public class User implements Serializable {
 		this.tickets = tickets;
 	}
 
-	public String getId() {
+	public Long getId() {
 		return this.id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

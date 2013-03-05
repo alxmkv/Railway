@@ -5,7 +5,7 @@ package com.tsystems.javaschool.serverappl.dao.hibernate;
 import java.util.List;
 import javax.naming.InitialContext;
 import org.apache.log4j.Logger;
-import org.hibernate.LockMode;
+import org.hibernate.LockOptions;
 import org.hibernate.SessionFactory;
 
 import com.tsystems.javaschool.common.entities.Train;
@@ -60,7 +60,8 @@ public class TrainsHome {
 	public void attachClean(Train instance) {
 		logger.debug("attaching clean Train instance");
 		try {
-			sessionFactory.getCurrentSession().lock(instance, LockMode.NONE);
+			sessionFactory.getCurrentSession()
+					.buildLockRequest(LockOptions.NONE).lock(instance);
 			logger.debug("attach successful");
 		} catch (RuntimeException re) {
 			logger.error("attach failed", re);
@@ -92,7 +93,7 @@ public class TrainsHome {
 		}
 	}
 
-	public Train findById(String id) {
+	public Train findById(Long id) {
 		logger.debug("getting Train instance with id: " + id);
 		try {
 			Train instance = (Train) sessionFactory.getCurrentSession().get(

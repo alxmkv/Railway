@@ -12,12 +12,12 @@ import org.apache.log4j.Logger;
  */
 public class ThreadPool implements Executor {
 
-	private final static Logger logger = Logger.getLogger(ThreadPool.class);
-	private final static String className = ThreadPool.class.getSimpleName();
+	private static final Logger logger = Logger.getLogger(ThreadPool.class);
+	private static final String className = ThreadPool.class.getSimpleName();
+	private static final long TERMINATION_TIMEOUT = 60;
 
 	private final int poolSize;
 	private final ExecutorService pool;
-	private final static long TERMINATION_TIMEOUT = 60;
 
 	/**
 	 * @param poolSize

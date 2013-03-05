@@ -1,26 +1,35 @@
 package com.tsystems.javaschool.clientappl.views;
 
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+import java.io.IOException;
+import java.net.Socket;
+
 import javax.swing.JFrame;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
 import org.apache.log4j.Logger;
 
+import com.tsystems.javaschool.clientappl.ClientSenderReceiver;
+
 /**
  * Main frame for client application
  * 
  * @author Alexander Markov
  */
-public class ClientApplFrame extends JFrame {
+public class ClientApplFrame extends JFrame implements WindowListener {
 
-	private final static long serialVersionUID = -8247367126146234003L;
-	private final static Logger logger = Logger
+	private static final long serialVersionUID = -8247367126146234003L;
+	private static final Logger logger = Logger
 			.getLogger(ClientApplFrame.class);
+	private final Socket socket;
 
 	/**
 	 * Creates client application view
 	 */
-	public ClientApplFrame() {
+	public ClientApplFrame(Socket socket) {
+		this.socket = socket;
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (ClassNotFoundException e) {
@@ -33,13 +42,45 @@ public class ClientApplFrame extends JFrame {
 			logger.error("Underlying platform does not support this look and feel");
 		}
 		new ClientApplView(this);
+		this.addWindowListener(this);
 		this.setVisible(true);
 	}
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		new ClientApplFrame();
+	@Override
+	public void windowClosing(WindowEvent e) {
+		// Clean-up: close socket
+		try {
+			if (socket != null) {
+				socket.close();
+			}
+		} catch (IOException ex) {
+			logger.error("Could not close socket");
+		}
+		ClientSenderReceiver.close();
+		System.out.println("Client disconnected");
+	}
+
+	@Override
+	public void windowClosed(WindowEvent e) {
+	}
+
+	@Override
+	public void windowOpened(WindowEvent e) {
+	}
+
+	@Override
+	public void windowIconified(WindowEvent e) {
+	}
+
+	@Override
+	public void windowDeiconified(WindowEvent e) {
+	}
+
+	@Override
+	public void windowActivated(WindowEvent e) {
+	}
+
+	@Override
+	public void windowDeactivated(WindowEvent e) {
 	}
 }

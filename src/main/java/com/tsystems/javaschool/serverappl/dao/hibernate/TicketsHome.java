@@ -6,7 +6,7 @@ import java.util.List;
 import javax.naming.InitialContext;
 
 import org.apache.log4j.Logger;
-import org.hibernate.LockMode;
+import org.hibernate.LockOptions;
 import org.hibernate.SessionFactory;
 
 import com.tsystems.javaschool.common.entities.Ticket;
@@ -61,7 +61,8 @@ public class TicketsHome {
 	public void attachClean(Ticket instance) {
 		logger.debug("attaching clean Ticket instance");
 		try {
-			sessionFactory.getCurrentSession().lock(instance, LockMode.NONE);
+			sessionFactory.getCurrentSession()
+					.buildLockRequest(LockOptions.NONE).lock(instance);
 			logger.debug("attach successful");
 		} catch (RuntimeException re) {
 			logger.error("attach failed", re);
@@ -93,7 +94,7 @@ public class TicketsHome {
 		}
 	}
 
-	public Ticket findById(String id) {
+	public Ticket findById(Long id) {
 		logger.debug("getting Ticket instance with id: " + id);
 		try {
 			Ticket instance = (Ticket) sessionFactory.getCurrentSession().get(

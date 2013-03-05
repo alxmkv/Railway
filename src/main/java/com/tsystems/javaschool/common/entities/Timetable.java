@@ -17,7 +17,7 @@ public class Timetable implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.TABLE)
 	@Column(unique = true, nullable = false)
-	private String id;
+	private Long id;
 
 	@Column(name = "station_type")
 	private byte stationType;
@@ -51,11 +51,11 @@ public class Timetable implements Serializable {
 		this.stationType = stationType;
 	}
 
-	public String getId() {
+	public Long getId() {
 		return this.id;
 	}
 
-	public void setId(String id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 

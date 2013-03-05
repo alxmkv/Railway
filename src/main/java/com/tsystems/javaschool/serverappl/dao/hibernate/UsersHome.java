@@ -6,7 +6,7 @@ import java.util.List;
 import javax.naming.InitialContext;
 
 import org.apache.log4j.Logger;
-import org.hibernate.LockMode;
+import org.hibernate.LockOptions;
 import org.hibernate.SessionFactory;
 
 import com.tsystems.javaschool.common.entities.User;
@@ -61,7 +61,8 @@ public class UsersHome {
 	public void attachClean(User instance) {
 		logger.debug("attaching clean User instance");
 		try {
-			sessionFactory.getCurrentSession().lock(instance, LockMode.NONE);
+			sessionFactory.getCurrentSession()
+					.buildLockRequest(LockOptions.NONE).lock(instance);
 			logger.debug("attach successful");
 		} catch (RuntimeException re) {
 			logger.error("attach failed", re);
@@ -93,7 +94,7 @@ public class UsersHome {
 		}
 	}
 
-	public User findById(String id) {
+	public User findById(Long id) {
 		logger.debug("getting User instance with id: " + id);
 		try {
 			User instance = (User) sessionFactory.getCurrentSession().get(

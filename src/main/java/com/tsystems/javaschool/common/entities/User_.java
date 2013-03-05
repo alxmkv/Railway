@@ -10,7 +10,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 @Generated(value = "Dali", date = "2013-03-02T22:31:45.883+0400")
 @StaticMetamodel(User.class)
 public class User_ {
-	public static volatile SingularAttribute<User, String> id;
+	public static volatile SingularAttribute<User, Long> id;
 	public static volatile SingularAttribute<User, Date> birthdate;
 	public static volatile SingularAttribute<User, String> email;
 	public static volatile SingularAttribute<User, String> login;

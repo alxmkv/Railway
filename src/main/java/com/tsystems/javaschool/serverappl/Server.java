@@ -20,7 +20,7 @@ import com.tsystems.javaschool.serverappl.netutils.ShutdownSequence;
  */
 public class Server {
 
-	private final static Logger logger = Logger.getLogger(Server.class);
+	private static final Logger logger = Logger.getLogger(Server.class);
 
 	/**
 	 * java com/tsystems/javaschool/serverappl/Server 2 2 6087
@@ -36,11 +36,8 @@ public class Server {
 					new EnhancedPatternLayout("%d{dd-MM-yyyy HH:mm:ss.SSS} "
 							+ EnhancedPatternLayout.TTCC_CONVERSION_PATTERN),
 					"logs/server.log", true);
-			appender.setBufferSize(1024);
-			appender.setBufferedIO(true);
 			appender.setMaxBackupIndex(4);
-			appender.setMaxFileSize("10KB");
-			appender.activateOptions();
+			appender.setMaxFileSize("100KB");
 			BasicConfigurator.configure(appender);
 		} catch (IOException e) {
 			System.err

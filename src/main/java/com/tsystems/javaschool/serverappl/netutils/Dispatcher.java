@@ -5,7 +5,7 @@ import java.net.Socket;
 
 import org.apache.log4j.Logger;
 
-import com.tsystems.javaschool.common.ITerminateRunnable;
+import com.tsystems.javaschool.serverappl.ITerminateRunnable;
 import com.tsystems.javaschool.serverappl.concurrentutils.Counter;
 import com.tsystems.javaschool.serverappl.concurrentutils.Queue;
 import com.tsystems.javaschool.serverappl.threadpooling.ThreadPool;
@@ -15,8 +15,8 @@ import com.tsystems.javaschool.serverappl.threadpooling.ThreadPool;
  */
 public class Dispatcher implements ITerminateRunnable {
 
-	private final static Logger logger = Logger.getLogger(Dispatcher.class);
-	private final static String className = Dispatcher.class.getSimpleName();
+	private static final Logger logger = Logger.getLogger(Dispatcher.class);
+	private static final String className = Dispatcher.class.getSimpleName();
 
 	private final Counter counter;
 	private final Queue queue;

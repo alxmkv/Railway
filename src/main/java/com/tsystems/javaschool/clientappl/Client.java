@@ -1,13 +1,11 @@
 package com.tsystems.javaschool.clientappl;
 
-import java.io.BufferedReader;
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.Socket;
 import java.net.UnknownHostException;
+
+import javax.swing.SwingUtilities;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.EnhancedPatternLayout;
@@ -23,7 +21,7 @@ import com.tsystems.javaschool.clientappl.views.ClientApplFrame;
  */
 public class Client {
 
-	private final static Logger logger = Logger.getLogger(Client.class);
+	private static final Logger logger = Logger.getLogger(Client.class);
 
 	/**
 	 * java com/tsystems/javaschool/clientappl/Client localhost 6087
@@ -38,11 +36,8 @@ public class Client {
 					new EnhancedPatternLayout("%d{dd-MM-yyyy HH:mm:ss.SSS} "
 							+ EnhancedPatternLayout.TTCC_CONVERSION_PATTERN),
 					"logs/client.log", true);
-			appender.setBufferSize(1024);
-			appender.setBufferedIO(true);
 			appender.setMaxBackupIndex(4);
-			appender.setMaxFileSize("10KB");
-			appender.activateOptions();
+			appender.setMaxFileSize("100KB");
 			BasicConfigurator.configure(appender);
 		} catch (IOException e) {
 			System.err
@@ -81,79 +76,25 @@ public class Client {
 				+ ia.toString() + ", port = " + port);
 
 		// 2.1. Open a socket and input/output streams to the socket
-		Socket socket = null;
-//		String cmd = "";
-//		DataOutputStream dos = null;
-//		// PrintWriter pw = null;
-//		DataInputStream dis = null;
-//		BufferedReader br = null;
+		final Socket socket;
 		try {
 			// Create stream socket and connect it to specified port number at
 			// specified IP address
 			socket = new Socket(ia, port);
 			System.out.println("Client started");
-			new ClientSenderReceiver(socket.getInputStream(), socket.getOutputStream());
+			new ClientSenderReceiver(socket.getInputStream(),
+					socket.getOutputStream());
+			System.out.println("ClientSenderReceiver started");
 			// 2.2. Start GUI client
-			new ClientApplFrame();
-//			// Create new data output stream to write data to specified
-//			// underlying output stream
-//			dos = new DataOutputStream(socket.getOutputStream());
-//			// pw = new PrintWriter(dos, true);
-//			dis = new DataInputStream(socket.getInputStream());
-//			// Create buffering character-input stream that uses default-sized
-//			// input buffer
-//			br = new BufferedReader(new InputStreamReader(System.in));
-//			// 3. Read from and write to the stream
-//			// Read line of text
-//			cmd = br.readLine();
-//			while (!"quit".equalsIgnoreCase(cmd) && cmd != null) {
-//				// Write string to underlying output stream using UTF-8
-//				if (cmd != null && !"".equalsIgnoreCase(cmd)) {
-//					dos.writeUTF(cmd);
-//					// Flush data output stream (force buffered output bytes to
-//					// be written out to stream)
-//					dos.flush();
-//					String str = dis.readUTF();
-//					if (str != null && !("".equalsIgnoreCase(str))) {
-//						System.out.println("Received message: " + str);
-//					}
-//				}
-//				cmd = br.readLine();
-//			}
-		} catch (IOException e) {
-			logger.error("Connection refused");
-		}
-		// 4. Clean-up: close streams and socket
-		finally {
-//			try {
-//				if (dos != null) {
-//					dos.close();
-//				}
-//			} catch (IOException e) {
-//				logger.error("Could not close output stream");
-//			}
-//			try {
-//				if (dis != null) {
-//					dis.close();
-//				}
-//			} catch (IOException e) {
-//				logger.error("Could not close input stream");
-//			}
-//			try {
-//				if (br != null) {
-//					br.close();
-//				}
-//			} catch (IOException e) {
-//				logger.error("Could not close reader stream");
-//			}
-			try {
-				if (socket != null) {
-					socket.close();
+			SwingUtilities.invokeLater(new Runnable() {
+				@Override
+				public void run() {
+					new ClientApplFrame(socket);
 				}
-			} catch (IOException e) {
-				logger.error("Could not close socket");
-			}
-			System.out.println("Client disconnected");
+			});
+			System.out.println("Client GUI started");
+		} catch (IOException e) {
+			logger.error("Connection refused: " + e.getMessage());
 		}
 	} // main()
 } // class Client

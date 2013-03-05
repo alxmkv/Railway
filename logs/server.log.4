@@ -1,0 +1,562 @@
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.User.tickets#2]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 1
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Train#3], EntityKey[com.tsystems.javaschool.common.entities.Ticket#4]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.User.tickets#2]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Train#4]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Train#4]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Ticket#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Ticket#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Train#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Train#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Ticket#4]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Ticket#4]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.User.tickets
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.User.tickets#2]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.User.tickets
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Train.timetables#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select timetables0_.train_id as train5_3_2_, timetables0_.id as id2_, timetables0_.id as id2_1_, timetables0_.station_id as station4_2_1_, timetables0_.station_type as station2_2_1_, timetables0_.time as time2_1_, timetables0_.train_id as train5_2_1_, station1_.id as id0_0_, station1_.name as name0_0_ from Railway.timetable timetables0_ inner join Railway.stations station1_ on timetables0_.station_id=station1_.id where timetables0_.train_id=?
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Train.timetables#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Station#1], EntityKey[com.tsystems.javaschool.common.entities.Timetable#7]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.timetables#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 1
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Station#3], EntityKey[com.tsystems.javaschool.common.entities.Timetable#8]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.timetables#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Station#1]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Station#1]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Timetable#7]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Timetable#7]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Station#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Station#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Timetable#8]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Timetable#8]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Train.timetables
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Train.timetables#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Train.timetables
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Station.timetables#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select timetables0_.station_id as station4_0_2_, timetables0_.id as id2_, timetables0_.id as id2_1_, timetables0_.station_id as station4_2_1_, timetables0_.station_type as station2_2_1_, timetables0_.time as time2_1_, timetables0_.train_id as train5_2_1_, train1_.id as id3_0_, train1_.capacity as capacity3_0_, train1_.name as name3_0_, train1_.number as number3_0_ from Railway.timetable timetables0_ inner join Railway.trains train1_ on timetables0_.train_id=train1_.id where timetables0_.station_id=?
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Station.timetables#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Train#3], EntityKey[com.tsystems.javaschool.common.entities.Timetable#8]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Station.timetables#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Station.timetables
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Station.timetables#3]
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Station.timetables
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.861 49587 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Station.timetables#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select timetables0_.station_id as station4_0_2_, timetables0_.id as id2_, timetables0_.id as id2_1_, timetables0_.station_id as station4_2_1_, timetables0_.station_type as station2_2_1_, timetables0_.time as time2_1_, timetables0_.train_id as train5_2_1_, train1_.id as id3_0_, train1_.capacity as capacity3_0_, train1_.name as name3_0_, train1_.number as number3_0_ from Railway.timetable timetables0_ inner join Railway.trains train1_ on timetables0_.train_id=train1_.id where timetables0_.station_id=?
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Station.timetables#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Train#1], EntityKey[com.tsystems.javaschool.common.entities.Timetable#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Station.timetables#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 1
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Train#2], EntityKey[com.tsystems.javaschool.common.entities.Timetable#3]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Station.timetables#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 2
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Train#3], EntityKey[com.tsystems.javaschool.common.entities.Timetable#7]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Station.timetables#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 3
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Train#4], EntityKey[com.tsystems.javaschool.common.entities.Timetable#5]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Station.timetables#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Train#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Train#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Timetable#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Timetable#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Train#2]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Train#2]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Timetable#3]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Timetable#3]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Timetable#5]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Timetable#5]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Station.timetables
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Station.timetables#1]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Station.timetables
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Train.timetables#2]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select timetables0_.train_id as train5_3_2_, timetables0_.id as id2_, timetables0_.id as id2_1_, timetables0_.station_id as station4_2_1_, timetables0_.station_type as station2_2_1_, timetables0_.time as time2_1_, timetables0_.train_id as train5_2_1_, station1_.id as id0_0_, station1_.name as name0_0_ from Railway.timetable timetables0_ inner join Railway.stations station1_ on timetables0_.station_id=station1_.id where timetables0_.train_id=?
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Train.timetables#2]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Station#1], EntityKey[com.tsystems.javaschool.common.entities.Timetable#3]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.timetables#2]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 1
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Station#2], EntityKey[com.tsystems.javaschool.common.entities.Timetable#4]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.timetables#2]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Station#2]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Station#2]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Timetable#4]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Timetable#4]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Train.timetables
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Train.timetables#2]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Train.timetables
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Station.timetables#2]
+05-03-2013 04:39:06.877 49603 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select timetables0_.station_id as station4_0_2_, timetables0_.id as id2_, timetables0_.id as id2_1_, timetables0_.station_id as station4_2_1_, timetables0_.station_type as station2_2_1_, timetables0_.time as time2_1_, timetables0_.train_id as train5_2_1_, train1_.id as id3_0_, train1_.capacity as capacity3_0_, train1_.name as name3_0_, train1_.number as number3_0_ from Railway.timetable timetables0_ inner join Railway.trains train1_ on timetables0_.train_id=train1_.id where timetables0_.station_id=?
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Station.timetables#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Train#1], EntityKey[com.tsystems.javaschool.common.entities.Timetable#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Station.timetables#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 1
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Train#2], EntityKey[com.tsystems.javaschool.common.entities.Timetable#4]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Station.timetables#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Timetable#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Timetable#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Station.timetables
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Station.timetables#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Station.timetables
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Train.tickets#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select tickets0_.train_id as train3_3_2_, tickets0_.id as id2_, tickets0_.id as id1_1_, tickets0_.date as date1_1_, tickets0_.train_id as train3_1_1_, tickets0_.user_id as user4_1_1_, user1_.id as id4_0_, user1_.birthdate as birthdate4_0_, user1_.email as email4_0_, user1_.login as login4_0_, user1_.name as name4_0_, user1_.password as password4_0_, user1_.status as status4_0_, user1_.surname as surname4_0_, user1_.ts_login as ts9_4_0_, user1_.user_type as user10_4_0_ from Railway.tickets tickets0_ inner join Railway.users user1_ on tickets0_.user_id=user1_.id where tickets0_.train_id=?
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Train.tickets#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Train.tickets
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Train.tickets#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Train.tickets
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Train.timetables#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select timetables0_.train_id as train5_3_2_, timetables0_.id as id2_, timetables0_.id as id2_1_, timetables0_.station_id as station4_2_1_, timetables0_.station_type as station2_2_1_, timetables0_.time as time2_1_, timetables0_.train_id as train5_2_1_, station1_.id as id0_0_, station1_.name as name0_0_ from Railway.timetable timetables0_ inner join Railway.stations station1_ on timetables0_.station_id=station1_.id where timetables0_.train_id=?
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Train.timetables#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Station#1], EntityKey[com.tsystems.javaschool.common.entities.Timetable#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.timetables#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 1
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Station#2], EntityKey[com.tsystems.javaschool.common.entities.Timetable#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.timetables#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Train.timetables
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Train.timetables#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Train.timetables
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Train.tickets#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select tickets0_.train_id as train3_3_2_, tickets0_.id as id2_, tickets0_.id as id1_1_, tickets0_.date as date1_1_, tickets0_.train_id as train3_1_1_, tickets0_.user_id as user4_1_1_, user1_.id as id4_0_, user1_.birthdate as birthdate4_0_, user1_.email as email4_0_, user1_.login as login4_0_, user1_.name as name4_0_, user1_.password as password4_0_, user1_.status as status4_0_, user1_.surname as surname4_0_, user1_.ts_login as ts9_4_0_, user1_.user_type as user10_4_0_ from Railway.tickets tickets0_ inner join Railway.users user1_ on tickets0_.user_id=user1_.id where tickets0_.train_id=?
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Train.tickets#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.User#1], EntityKey[com.tsystems.javaschool.common.entities.Ticket#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.tickets#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.User#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.User#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Ticket#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Ticket#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Train.tickets
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Train.tickets#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Train.tickets
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.User.tickets#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select tickets0_.user_id as user4_4_2_, tickets0_.id as id2_, tickets0_.id as id1_1_, tickets0_.date as date1_1_, tickets0_.train_id as train3_1_1_, tickets0_.user_id as user4_1_1_, train1_.id as id3_0_, train1_.capacity as capacity3_0_, train1_.name as name3_0_, train1_.number as number3_0_ from Railway.tickets tickets0_ inner join Railway.trains train1_ on tickets0_.train_id=train1_.id where tickets0_.user_id=?
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.User.tickets#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Train#1], EntityKey[com.tsystems.javaschool.common.entities.Ticket#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.User.tickets#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 1
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Train#4], EntityKey[com.tsystems.javaschool.common.entities.Ticket#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.User.tickets#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Ticket#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Ticket#2]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.User.tickets
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.User.tickets#1]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.User.tickets
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Train.tickets#3]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select tickets0_.train_id as train3_3_2_, tickets0_.id as id2_, tickets0_.id as id1_1_, tickets0_.date as date1_1_, tickets0_.train_id as train3_1_1_, tickets0_.user_id as user4_1_1_, user1_.id as id4_0_, user1_.birthdate as birthdate4_0_, user1_.email as email4_0_, user1_.login as login4_0_, user1_.name as name4_0_, user1_.password as password4_0_, user1_.status as status4_0_, user1_.surname as surname4_0_, user1_.ts_login as ts9_4_0_, user1_.user_type as user10_4_0_ from Railway.tickets tickets0_ inner join Railway.users user1_ on tickets0_.user_id=user1_.id where tickets0_.train_id=?
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Train.tickets#3]
+05-03-2013 04:39:06.908 49634 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.User#2], EntityKey[com.tsystems.javaschool.common.entities.Ticket#4]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.tickets#3]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Train.tickets
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Train.tickets#3]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Train.tickets
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Train.timetables#4]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select timetables0_.train_id as train5_3_2_, timetables0_.id as id2_, timetables0_.id as id2_1_, timetables0_.station_id as station4_2_1_, timetables0_.station_type as station2_2_1_, timetables0_.time as time2_1_, timetables0_.train_id as train5_2_1_, station1_.id as id0_0_, station1_.name as name0_0_ from Railway.timetable timetables0_ inner join Railway.stations station1_ on timetables0_.station_id=station1_.id where timetables0_.train_id=?
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Train.timetables#4]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Station#1], EntityKey[com.tsystems.javaschool.common.entities.Timetable#5]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.timetables#4]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 1
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Station#5], EntityKey[com.tsystems.javaschool.common.entities.Timetable#6]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.timetables#4]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Station#5]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Station#5]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Resolving associations for [com.tsystems.javaschool.common.entities.Timetable#6]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.TwoPhaseLoad null - Done materializing entity [com.tsystems.javaschool.common.entities.Timetable#6]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Train.timetables
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Train.timetables#4]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Train.timetables
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Station.timetables#5]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select timetables0_.station_id as station4_0_2_, timetables0_.id as id2_, timetables0_.id as id2_1_, timetables0_.station_id as station4_2_1_, timetables0_.station_type as station2_2_1_, timetables0_.time as time2_1_, timetables0_.train_id as train5_2_1_, train1_.id as id3_0_, train1_.capacity as capacity3_0_, train1_.name as name3_0_, train1_.number as number3_0_ from Railway.timetable timetables0_ inner join Railway.trains train1_ on timetables0_.train_id=train1_.id where timetables0_.station_id=?
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Station.timetables#5]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.Train#4], EntityKey[com.tsystems.javaschool.common.entities.Timetable#6]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Station.timetables#5]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Station.timetables
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Station.timetables#5]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Station.timetables
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Loading collection: [com.tsystems.javaschool.common.entities.Train.tickets#4]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.SQL null - select tickets0_.train_id as train3_3_2_, tickets0_.id as id2_, tickets0_.id as id1_1_, tickets0_.date as date1_1_, tickets0_.train_id as train3_1_1_, tickets0_.user_id as user4_1_1_, user1_.id as id4_0_, user1_.birthdate as birthdate4_0_, user1_.email as email4_0_, user1_.login as login4_0_, user1_.name as name4_0_, user1_.password as password4_0_, user1_.status as status4_0_, user1_.surname as surname4_0_, user1_.ts_login as ts9_4_0_, user1_.user_type as user10_4_0_ from Railway.tickets tickets0_ inner join Railway.users user1_ on tickets0_.user_id=user1_.id where tickets0_.train_id=?
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set contains (possibly empty) collection: [com.tsystems.javaschool.common.entities.Train.tickets#4]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 0
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.User#1], EntityKey[com.tsystems.javaschool.common.entities.Ticket#2]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.tickets#4]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result set row: 1
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Result row: EntityKey[com.tsystems.javaschool.common.entities.User#2], EntityKey[com.tsystems.javaschool.common.entities.Ticket#3]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Found row of collection: [com.tsystems.javaschool.common.entities.Train.tickets#4]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections were found in result set for role: com.tsystems.javaschool.common.entities.Train.tickets
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - Collection fully initialized: [com.tsystems.javaschool.common.entities.Train.tickets#4]
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.loading.internal.CollectionLoadContext null - 1 collections initialized for role: com.tsystems.javaschool.common.entities.Train.tickets
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.loader.Loader null - Done loading collection
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.transaction.spi.AbstractTransactionImpl null - committing
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener null - Processing flush-time cascades
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener null - Dirty checking collections
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.User.tickets#2], was: [com.tsystems.javaschool.common.entities.User.tickets#2] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Train.tickets#4], was: [com.tsystems.javaschool.common.entities.Train.tickets#4] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Train.timetables#4], was: [com.tsystems.javaschool.common.entities.Train.timetables#4] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Train.tickets#3], was: [com.tsystems.javaschool.common.entities.Train.tickets#3] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Train.timetables#3], was: [com.tsystems.javaschool.common.entities.Train.timetables#3] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Station.timetables#1], was: [com.tsystems.javaschool.common.entities.Station.timetables#1] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Station.timetables#3], was: [com.tsystems.javaschool.common.entities.Station.timetables#3] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Train.tickets#1], was: [com.tsystems.javaschool.common.entities.Train.tickets#1] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Train.timetables#1], was: [com.tsystems.javaschool.common.entities.Train.timetables#1] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Train.tickets#2], was: [com.tsystems.javaschool.common.entities.Train.tickets#2] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Train.timetables#2], was: [com.tsystems.javaschool.common.entities.Train.timetables#2] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Station.timetables#2], was: [com.tsystems.javaschool.common.entities.Station.timetables#2] (initialized)
+05-03-2013 04:39:06.924 49650 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.User.tickets#1], was: [com.tsystems.javaschool.common.entities.User.tickets#1] (initialized)
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.engine.internal.Collections null - Collection found: [com.tsystems.javaschool.common.entities.Station.timetables#5], was: [com.tsystems.javaschool.common.entities.Station.timetables#5] (initialized)
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener null - Flushed: 0 insertions, 0 updates, 0 deletions to 22 objects
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.event.internal.AbstractFlushingEventListener null - Flushed: 0 (re)creations, 0 updates, 0 removals to 14 collections
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - Listing entities:
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Ticket{id=2, train=com.tsystems.javaschool.common.entities.Train#4, date=2013-07-02, user=com.tsystems.javaschool.common.entities.User#1}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Timetable{id=4, time=07:45:00, station=com.tsystems.javaschool.common.entities.Station#2, train=com.tsystems.javaschool.common.entities.Train#2, stationType=3}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Ticket{id=3, train=com.tsystems.javaschool.common.entities.Train#4, date=2013-07-02, user=com.tsystems.javaschool.common.entities.User#2}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Timetable{id=3, time=22:45:00, station=com.tsystems.javaschool.common.entities.Station#1, train=com.tsystems.javaschool.common.entities.Train#2, stationType=1}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Timetable{id=6, time=07:40:00, station=com.tsystems.javaschool.common.entities.Station#5, train=com.tsystems.javaschool.common.entities.Train#4, stationType=3}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Ticket{id=4, train=com.tsystems.javaschool.common.entities.Train#3, date=2013-08-15, user=com.tsystems.javaschool.common.entities.User#2}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Timetable{id=5, time=19:45:00, station=com.tsystems.javaschool.common.entities.Station#1, train=com.tsystems.javaschool.common.entities.Train#4, stationType=1}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Timetable{id=2, time=07:30:00, station=com.tsystems.javaschool.common.entities.Station#2, train=com.tsystems.javaschool.common.entities.Train#1, stationType=3}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Ticket{id=1, train=com.tsystems.javaschool.common.entities.Train#1, date=2013-05-01, user=com.tsystems.javaschool.common.entities.User#1}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Timetable{id=1, time=23:45:00, station=com.tsystems.javaschool.common.entities.Station#1, train=com.tsystems.javaschool.common.entities.Train#1, stationType=1}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Train{id=3, name=Allegro, capacity=100, number=168, timetables=[com.tsystems.javaschool.common.entities.Timetable#7, com.tsystems.javaschool.common.entities.Timetable#8], tickets=[com.tsystems.javaschool.common.entities.Ticket#4]}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Station{id=3, name=Helsinki, timetables=[com.tsystems.javaschool.common.entities.Timetable#8]}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Station{id=2, name=Moscow, timetables=[com.tsystems.javaschool.common.entities.Timetable#2, com.tsystems.javaschool.common.entities.Timetable#4]}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Train{id=2, name=Krasnaya Strela, capacity=300, number=1, timetables=[com.tsystems.javaschool.common.entities.Timetable#4, com.tsystems.javaschool.common.entities.Timetable#3], tickets=[]}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.User{tsLogin=2013-03-01 18:44:04.0, id=1, status=1, email=alxmkv@mail.ru, name=Alexander, birthdate=1990-05-03, surname=Markov, login=alexm, password=alexm, tickets=[com.tsystems.javaschool.common.entities.Ticket#2, com.tsystems.javaschool.common.entities.Ticket#1], userType=1}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Station{id=1, name=Saint-Petersburg, timetables=[com.tsystems.javaschool.common.entities.Timetable#5, com.tsystems.javaschool.common.entities.Timetable#7, com.tsystems.javaschool.common.entities.Timetable#1, com.tsystems.javaschool.common.entities.Timetable#3]}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Train{id=1, name=Grand Express, capacity=300, number=25, timetables=[com.tsystems.javaschool.common.entities.Timetable#2, com.tsystems.javaschool.common.entities.Timetable#1], tickets=[com.tsystems.javaschool.common.entities.Ticket#1]}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.User{tsLogin=2013-03-01 18:44:04.0, id=2, status=1, email=ivanov@test.com, name=Petr, birthdate=1980-06-01, surname=Ivanov, login=user, password=user, tickets=[com.tsystems.javaschool.common.entities.Ticket#3, com.tsystems.javaschool.common.entities.Ticket#4], userType=2}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Station{id=5, name=Adler, timetables=[com.tsystems.javaschool.common.entities.Timetable#6]}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Timetable{id=7, time=18:00:00, station=com.tsystems.javaschool.common.entities.Station#1, train=com.tsystems.javaschool.common.entities.Train#3, stationType=1}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - com.tsystems.javaschool.common.entities.Train{id=4, name=Severnaya Palmira, capacity=800, number=49, timetables=[com.tsystems.javaschool.common.entities.Timetable#6, com.tsystems.javaschool.common.entities.Timetable#5], tickets=[com.tsystems.javaschool.common.entities.Ticket#3, com.tsystems.javaschool.common.entities.Ticket#2]}
+05-03-2013 04:39:06.939 49665 [pool-1-thread-1] DEBUG org.hibernate.internal.util.EntityPrinter null - More......
+05-03-2013 04:39:06.955 49681 [pool-1-thread-1] DEBUG org.hibernate.engine.transaction.internal.jdbc.JdbcTransaction null - committed JDBC Connection
+05-03-2013 04:39:06.955 49681 [pool-1-thread-1] DEBUG org.hibernate.engine.jdbc.internal.LogicalConnectionImpl null - Releasing JDBC connection
+05-03-2013 04:39:06.955 49681 [pool-1-thread-1] DEBUG org.hibernate.engine.jdbc.internal.LogicalConnectionImpl null - Released JDBC connection
+05-03-2013 04:39:06.955 49681 [pool-1-thread-1] DEBUG org.hibernate.engine.jdbc.internal.proxy.ConnectionProxyHandler null - HHH000163: Logical connection releasing its physical connection
+05-03-2013 04:39:16.830 59556 [Thread-1] WARN com.tsystems.javaschool.serverappl.netutils.Host null - Host: (max session counter = 2) <= (current conter = 2), closing socket
+05-03-2013 04:40:41.615 144341 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:41.615 144341 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:42.119 144845 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:42.119 144845 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:42.634 145360 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:42.634 145360 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:43.149 145875 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:43.149 145875 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:43.663 146389 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:43.663 146389 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:44.178 146904 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:44.178 146904 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:44.693 147419 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:44.693 147419 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:45.208 147934 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:45.208 147934 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:45.723 148449 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:45.723 148449 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:46.237 148963 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:46.237 148963 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:46.752 149478 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:46.752 149478 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:47.267 149993 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:47.267 149993 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:47.782 150508 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:47.782 150508 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:48.297 151023 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:48.297 151023 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:48.811 151537 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:48.811 151537 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:49.326 152052 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:49.326 152052 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:49.841 152567 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:49.841 152567 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:50.356 153082 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:50.356 153082 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:50.871 153597 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:50.871 153597 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:51.385 154111 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:51.385 154111 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:51.900 154626 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:51.900 154626 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:52.415 155141 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:52.415 155141 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:52.930 155656 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:52.930 155656 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:53.445 156171 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:53.445 156171 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:53.959 156685 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:53.959 156685 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:54.474 157200 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:54.474 157200 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:54.989 157715 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:54.989 157715 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:55.504 158230 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:55.504 158230 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:56.019 158745 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:56.019 158745 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:56.533 159259 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:56.533 159259 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:57.048 159774 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:57.048 159774 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:57.563 160289 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:57.563 160289 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:58.078 160804 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:58.078 160804 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:58.593 161319 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:58.593 161319 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:59.107 161833 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:59.107 161833 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:59.622 162348 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:40:59.622 162348 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:00.137 162863 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:00.137 162863 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:00.652 163378 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:00.652 163378 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:01.167 163893 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:01.167 163893 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:01.681 164407 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:01.681 164407 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:02.196 164922 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:02.196 164922 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:02.711 165437 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:02.711 165437 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:03.226 165952 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:03.226 165952 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:03.741 166467 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:03.741 166467 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:04.255 166981 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:04.255 166981 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:04.770 167496 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:04.770 167496 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:05.285 168011 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:05.285 168011 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:05.800 168526 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:05.800 168526 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:06.300 169026 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:06.300 169026 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:06.815 169541 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:06.815 169541 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:07.330 170056 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:07.330 170056 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:07.844 170570 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:07.844 170570 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:08.359 171085 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:08.359 171085 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:08.874 171600 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:08.874 171600 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:09.389 172115 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:09.389 172115 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:09.904 172630 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:09.904 172630 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:10.418 173144 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:10.418 173144 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:10.933 173659 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:10.933 173659 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:11.448 174174 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:11.448 174174 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:11.963 174689 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:11.963 174689 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:12.478 175204 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:12.478 175204 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:12.992 175718 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:12.992 175718 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:13.507 176233 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:13.507 176233 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:14.022 176748 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:14.022 176748 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:14.537 177263 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:14.537 177263 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:15.052 177778 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:15.052 177778 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:15.566 178292 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:15.566 178292 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:16.081 178807 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:16.081 178807 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:16.596 179322 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:16.596 179322 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:17.111 179837 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:17.111 179837 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:17.626 180352 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:17.626 180352 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:18.141 180867 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:18.141 180867 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:18.655 181381 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:18.655 181381 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:19.170 181896 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:19.170 181896 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:19.685 182411 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:19.685 182411 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:20.200 182926 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:20.200 182926 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:20.715 183441 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:20.715 183441 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:21.229 183955 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:21.229 183955 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:21.744 184470 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:21.744 184470 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:22.259 184985 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:22.259 184985 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:22.774 185500 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:22.774 185500 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:23.289 186015 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:23.289 186015 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:23.803 186529 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:23.803 186529 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:24.318 187044 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:24.318 187044 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:24.833 187559 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:24.833 187559 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:25.348 188074 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:25.348 188074 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:25.863 188589 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:25.863 188589 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:26.377 189103 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:26.377 189103 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:26.892 189618 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:26.892 189618 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:27.407 190133 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:27.407 190133 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:27.922 190648 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:27.922 190648 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:28.437 191163 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:28.437 191163 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:28.951 191677 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:28.951 191677 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:29.466 192192 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:29.466 192192 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:29.981 192707 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:29.981 192707 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:30.496 193222 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:30.496 193222 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:31.011 193737 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:31.011 193737 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:31.525 194251 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:31.525 194251 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:32.040 194766 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:32.040 194766 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:32.555 195281 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:32.555 195281 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:33.070 195796 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:33.070 195796 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:33.585 196311 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:33.585 196311 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:34.099 196825 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:34.099 196825 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:34.614 197340 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:34.614 197340 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:35.129 197855 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:35.129 197855 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:35.644 198370 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:35.644 198370 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:36.159 198885 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:36.159 198885 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:36.673 199399 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:36.673 199399 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:37.188 199914 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:37.188 199914 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:37.703 200429 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:37.703 200429 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:38.218 200944 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:38.218 200944 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:38.733 201459 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:38.733 201459 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:39.247 201973 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:39.247 201973 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:39.762 202488 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:39.762 202488 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:40.277 203003 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:40.277 203003 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:40.792 203518 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:40.792 203518 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:41.307 204033 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:41.307 204033 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:41.821 204547 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:41.821 204547 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:42.336 205062 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:42.336 205062 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:42.851 205577 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:42.867 205593 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:43.366 206092 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:43.381 206107 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:43.881 206607 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:43.896 206622 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:44.395 207121 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:44.411 207137 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:44.910 207636 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:44.926 207652 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:45.425 208151 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:45.441 208167 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:45.940 208666 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:45.955 208681 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:46.455 209181 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:46.470 209196 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:46.969 209695 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:46.985 209711 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:47.484 210210 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:47.500 210226 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:47.999 210725 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:48.015 210741 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:48.514 211240 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:48.529 211255 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:49.029 211755 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:49.044 211770 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:49.543 212269 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:49.559 212285 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:50.058 212784 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:50.074 212800 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:50.573 213299 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:50.589 213315 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:51.088 213814 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:51.103 213829 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:51.603 214329 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:51.618 214344 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:52.117 214843 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:52.133 214859 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:52.632 215358 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:52.648 215374 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:53.147 215873 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:53.163 215889 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:53.662 216388 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:53.677 216403 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:54.177 216903 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:54.192 216918 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:54.691 217417 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:54.707 217433 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:55.206 217932 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:55.222 217948 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:55.721 218447 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:55.737 218463 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:56.236 218962 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:56.251 218977 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:56.751 219477 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:56.766 219492 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:57.265 219991 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:57.281 220007 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:57.780 220506 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:57.796 220522 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:58.295 221021 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:58.311 221037 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:58.810 221536 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:58.825 221551 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:59.325 222051 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:59.340 222066 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:59.839 222565 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:41:59.855 222581 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:42:00.354 223080 [pool-1-thread-1] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read
+05-03-2013 04:42:00.370 223096 [pool-1-thread-2] ERROR com.tsystems.javaschool.serverappl.netutils.ServerReceiverSender null - Request could not be read

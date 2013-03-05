@@ -10,6 +10,7 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import com.tsystems.javaschool.clientappl.controller.listeners.LoginButtonListener;
@@ -38,8 +39,8 @@ public class RegistrationView extends JPanel {
 	private final JTextField birthdateTextField;
 	private final JTextField emailTextField;
 	private final JTextField loginTextField;
-	private final JTextField passwordTextField;
-	private final JTextField confirmPasswordTextField;
+	private final JPasswordField passwordTextField;
+	private final JPasswordField confirmPasswordTextField;
 
 	/**
 	 * Constructs registration form
@@ -62,7 +63,7 @@ public class RegistrationView extends JPanel {
 		nameLabel.setFont(registerViewFont);
 		surnameLabel = new JLabel("Surname:");
 		surnameLabel.setFont(registerViewFont);
-		birthdateLabel = new JLabel("Birth date:");
+		birthdateLabel = new JLabel("Birth date (yyyy-mm-dd):");
 		birthdateLabel.setFont(registerViewFont);
 		emailLabel = new JLabel("Email:");
 		emailLabel.setFont(registerViewFont);
@@ -82,9 +83,9 @@ public class RegistrationView extends JPanel {
 		emailTextField.setFont(registerViewFont);
 		loginTextField = new JTextField();
 		loginTextField.setFont(registerViewFont);
-		passwordTextField = new JTextField();
+		passwordTextField = new JPasswordField();
 		passwordTextField.setFont(registerViewFont);
-		confirmPasswordTextField = new JTextField();
+		confirmPasswordTextField = new JPasswordField();
 		confirmPasswordTextField.setFont(registerViewFont);
 		this.add(new JLabel(""));
 		this.add(loginButton);
@@ -158,14 +159,14 @@ public class RegistrationView extends JPanel {
 	/**
 	 * @return Password
 	 */
-	public JTextField getPasswordTextField() {
+	public JPasswordField getPasswordTextField() {
 		return passwordTextField;
 	}
 
 	/**
 	 * @return Confirmed password
 	 */
-	public JTextField getConfirmPasswordTextField() {
+	public JPasswordField getConfirmPasswordTextField() {
 		return confirmPasswordTextField;
 	}
 }

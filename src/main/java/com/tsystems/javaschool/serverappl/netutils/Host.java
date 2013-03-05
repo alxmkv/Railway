@@ -7,7 +7,7 @@ import java.net.Socket;
 
 import org.apache.log4j.Logger;
 
-import com.tsystems.javaschool.common.ITerminateRunnable;
+import com.tsystems.javaschool.serverappl.ITerminateRunnable;
 import com.tsystems.javaschool.serverappl.concurrentutils.Counter;
 import com.tsystems.javaschool.serverappl.concurrentutils.Queue;
 
@@ -16,8 +16,8 @@ import com.tsystems.javaschool.serverappl.concurrentutils.Queue;
  */
 public class Host implements ITerminateRunnable {
 
-	private final static Logger logger = Logger.getLogger(Host.class);
-	private final static String className = Host.class.getSimpleName();
+	private static final Logger logger = Logger.getLogger(Host.class);
+	private static final String className = Host.class.getSimpleName();
 
 	private final Counter counter;
 	private final Queue queue;

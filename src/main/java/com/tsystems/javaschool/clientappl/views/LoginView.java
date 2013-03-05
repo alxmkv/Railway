@@ -7,6 +7,7 @@ import java.awt.GridLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import com.tsystems.javaschool.clientappl.controller.listeners.RegisterButtonListener;
@@ -26,7 +27,7 @@ public class LoginView extends JPanel {
 	private final JLabel loginLabel;
 	private final JLabel passwordLabel;
 	private final JTextField loginTextField;
-	private final JTextField passwordTextField;
+	private final JPasswordField passwordTextField;
 
 	/**
 	 * Constructs login form
@@ -52,7 +53,7 @@ public class LoginView extends JPanel {
 		passwordLabel.setFont(loginViewFont);
 		loginTextField = new JTextField();
 		loginTextField.setFont(loginViewFont);
-		passwordTextField = new JTextField();
+		passwordTextField = new JPasswordField();
 		passwordTextField.setFont(loginViewFont);
 		this.add(new JLabel(""));
 		this.add(new JLabel(""));
@@ -90,7 +91,7 @@ public class LoginView extends JPanel {
 	/**
 	 * @return Password
 	 */
-	public JTextField getPasswordTextField() {
+	public JPasswordField getPasswordTextField() {
 		return passwordTextField;
 	}
 }

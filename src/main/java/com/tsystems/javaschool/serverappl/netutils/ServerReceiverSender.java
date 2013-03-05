@@ -58,17 +58,30 @@ public class ServerReceiverSender {
 	public static ServiceRequest receive() {
 		ServiceRequest request = null;
 		try {
-			try {
-				Thread.sleep(500);
-			} catch (InterruptedException e) {
-				logger.error("InterruptedException while sleeping in request receive");
+			if (objectInputStream.read() == 1) {
+				request = (ServiceRequest) objectInputStream.readObject();
 			}
-			request = (ServiceRequest) objectInputStream.readObject();
 		} catch (IOException e) {
 			logger.error("Request could not be read");
 		} catch (ClassNotFoundException e) {
 			logger.error("Request could not be deserialized");
 		}
 		return request;
+	}
+
+	/**
+	 * Close streams
+	 */
+	public static void close() {
+		try {
+			objectOutputStream.close();
+		} catch (IOException e) {
+			logger.error("Object output stream could not be closed");
+		}
+		try {
+			objectInputStream.close();
+		} catch (IOException e) {
+			logger.error("Object input stream could not be closed");
+		}
 	}
 }

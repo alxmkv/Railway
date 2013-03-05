@@ -25,7 +25,7 @@ public class NewOrderButtonListener implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == clientApplView.getNavigationView()
 				.getNewOrderButton()) {
-			clientApplView.getEditorView().showView("New order");
+			clientApplView.getEditorView().showView("New order", null);
 		}
 	}
 }

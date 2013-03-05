@@ -46,6 +46,10 @@ public class SessionTask implements Runnable {
 				ServiceRequest request = ServerReceiverSender.receive();
 				if (request != null) {
 					ServerReceiverSender.send(ServiceLocator.service(request));
+				} else {
+					// Client disconnected
+					isRunning = false;
+					throw new IOException();
 				}
 			}
 		} catch (IOException e) {
@@ -57,6 +61,7 @@ public class SessionTask implements Runnable {
 				logger.error("Session #" + id + " counter < 0");
 			}
 			try {
+				ServerReceiverSender.close();
 				if (socket != null && !socket.isClosed()) {
 					socket.close();
 				}

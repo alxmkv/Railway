@@ -3,6 +3,10 @@ package com.tsystems.javaschool.clientappl.views;
 import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
+import java.util.List;
+
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 
@@ -43,9 +47,20 @@ public class EditorView extends JScrollPane {
 	/**
 	 * @param view
 	 *            name of view to show
+	 * @param data
 	 */
-	public void showView(String view) {
-		editorPanelLayout.show(editorPanel, view);
+	public void showView(String view, List<?> data) {
+		if ("Search results".equals(view)) {
+			JPanel results = new JPanel();
+			JLabel label = new JLabel(data.toString());
+			label.setFont(new Font("Verdana", Font.PLAIN, 24));
+			results.add(label);
+			editorPanel.add(results, view);
+			editorPanelLayout.show(editorPanel, view);
+		}
+		else {
+			editorPanelLayout.show(editorPanel, view);
+		}
 	}
 
 	/**

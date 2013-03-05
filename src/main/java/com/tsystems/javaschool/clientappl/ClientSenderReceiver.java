@@ -47,6 +47,8 @@ public class ClientSenderReceiver {
 	 */
 	public static void send(ServiceRequest request) {
 		try {
+			objectOutputStream.write(1);
+			objectOutputStream.flush();
 			objectOutputStream.writeObject(request);
 			objectOutputStream.flush();
 		} catch (IOException e) {

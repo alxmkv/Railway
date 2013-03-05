@@ -1,5 +1,6 @@
 package com.tsystems.javaschool.serverappl.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.hibernate.HibernateException;
@@ -10,6 +11,8 @@ import com.tsystems.javaschool.common.ServiceResponse;
 import com.tsystems.javaschool.common.entities.User;
 
 /**
+ * Authenticate and authorize user
+ * 
  * @author Alexander Markov
  */
 public class AuthenticationService {
@@ -31,11 +34,16 @@ public class AuthenticationService {
 			HibernateUtil.commitTransaction();
 		} catch (HibernateException e) {
 			HibernateUtil.rollbackTransaction();
+		} finally {
+			HibernateUtil.closeSession();
 		}
 		if (user == null) {
 			return new ServiceResponse(false, null,
 					"Login and password do not match");
 		}
-		return new ServiceResponse(true, null, "");
+		// Get user type
+		List<String> result = new ArrayList<String>(1);
+		result.add(Byte.valueOf(user.getUserType()).toString());
+		return new ServiceResponse(true, result, "");
 	}
 }

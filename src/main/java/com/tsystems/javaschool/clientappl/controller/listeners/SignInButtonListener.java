@@ -12,6 +12,7 @@ import com.tsystems.javaschool.clientappl.ClientSenderReceiver;
 import com.tsystems.javaschool.clientappl.views.ClientApplView;
 import com.tsystems.javaschool.clientappl.views.ErrorMessageView;
 import com.tsystems.javaschool.clientappl.views.LoginView;
+import com.tsystems.javaschool.clientappl.views.NavigationView;
 import com.tsystems.javaschool.clientappl.views.RegistrationView;
 import com.tsystems.javaschool.common.RequestType;
 import com.tsystems.javaschool.common.ServiceRequest;
@@ -111,11 +112,18 @@ public class SignInButtonListener implements ActionListener {
 					RequestType.AUTHENTICATION, payload));
 			ServiceResponse response = ClientSenderReceiver.receive();
 			if (response != null && response.getStatus()) {
+				if ("2".equals(response.getPayload().get(0))) {
+					NavigationView navigationView = clientApplView
+							.getNavigationView();
+					navigationView.getAddStationTrainButton().setVisible(false);
+					navigationView.getPassengersButton().setVisible(false);
+					navigationView.getTrainsButton().setVisible(false);
+				}
 				clientApplView.showView("Home");
 			} else {
 				if (response == null) {
 					new ErrorMessageView(clientApplView.getFrame(),
-						"Incorrect login or password");
+							"Incorrect login or password");
 				} else {
 					new ErrorMessageView(clientApplView.getFrame(),
 							response.getException());

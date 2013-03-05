@@ -8,7 +8,6 @@ import java.util.List;
 
 import org.apache.commons.validator.routines.DateValidator;
 
-import com.tsystems.javaschool.common.HibernateUtil;
 import com.tsystems.javaschool.common.ServiceRequest;
 import com.tsystems.javaschool.common.ServiceResponse;
 import com.tsystems.javaschool.serverappl.dao.exceptions.UserRegistrationFailedException;

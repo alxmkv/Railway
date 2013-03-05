@@ -24,7 +24,8 @@ public class ServiceLocator {
 			response = AuthenticationService.service(request);
 			System.out.println("AUTHENTICATION request");
 		} else if (type == RequestType.TRAINSBYSTATIONSANDTIME) {
-
+			response = TimetableService.service(request);
+			System.out.println("TRAINSBYSTATIONSANDTIME request");
 		} else if (type == RequestType.TIMETABLEBYSTATION) {
 
 		} else if (type == RequestType.TICKETORDER) {

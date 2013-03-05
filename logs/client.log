@@ -1,4 +1,0 @@
-05-03-2013 04:34:44.787 0 [AWT-EventQueue-0] ERROR com.tsystems.javaschool.clientappl.ClientSenderReceiver null - Response could not be read
-05-03-2013 04:35:20.970 36183 [AWT-EventQueue-0] ERROR com.tsystems.javaschool.clientappl.ClientSenderReceiver null - Response could not be read
-05-03-2013 04:39:16.830 0 [main] ERROR com.tsystems.javaschool.clientappl.Client null - Connection refused: Software caused connection abort: recv failed
-05-03-2013 04:41:05.800 0 [main] ERROR com.tsystems.javaschool.clientappl.Client null - Connection refused: Connection refused: connect
